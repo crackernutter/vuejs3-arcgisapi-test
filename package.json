@@ -1,24 +1,28 @@
 {
-  "name": "testing",
+  "name": "vuejs3-arcgisjsapi-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "postinstall": "ncp ./node_modules/@arcgis/core/assets ./public/assets"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "@arcgis/core": "^4.18",
+    "core-js": "^3.8.1",
+    "vue": "^3.0.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/compiler-sfc": "^3.0.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0-0"
+    "eslint-plugin-vue": "^7.2.0",
+    "ncp": "^2.0.0",
+    "sass-loader": "^10.1.0"
   },
   "eslintConfig": {
     "root": true,
