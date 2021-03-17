@@ -13,6 +13,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# ignore esri assets
+public/assets/esri/
+
 # Editor directories and files
 .idea
 .vscode
